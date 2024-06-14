@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Binária</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Calculadora Binária</h1>
+
+        <div class="row">
+            <div class="converter">
+                <h2>Conversão de Decimal para Binário</h2>
+                <input type="number" id="decimal" placeholder="Decimal">
+                <button onclick="converterDecimalParaBinario()">Converter</button>
+                <p id="resultadoDecimalBinario"></p>
+            </div>
+
+            <div class="converter">
+                <h2>Complemento de 2</h2>
+                <input type="text" id="binarioComplemento" placeholder="Binário">
+                <button onclick="converterParaComplemento2()">Converter</button>
+                <p id="resultadoComplemento"></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="operations">
+                <h2>Operações Binárias</h2>
+                <input type="text" id="binario1" placeholder="Binário 1">
+                <input type="text" id="binario2" placeholder="Binário 2">
+                <button onclick="somarBinarios()">+</button>
+                <button onclick="subtrairBinarios()">-</button>
+                <button onclick="multiplicarBinarios()">&times;</button>
+                <button onclick="dividirBinarios()">&divide;</button>
+                <p id="resultadoOperacao"></p>
+            </div>
+
+            <div class="converter">
+                <h2>Hexadecimal e Octal</h2>
+                <input type="text" id="binarioHexOct" placeholder="Binário">
+                <button onclick="converterParaHexadecimal()">Hexadecimal</button>
+                <button onclick="converterParaOctal()">Octal</button>
+                <p id="resultadoHexOct"></p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Matheus Henrique Butkoski - 1ºA TADS UNIVEL</p>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
